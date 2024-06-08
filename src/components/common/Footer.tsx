@@ -14,7 +14,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className="w-full p-8 grid grid-cols-8 gap-5 bg-primary text-white">
+    <footer className="w-full p-8 grid grid-cols-8 gap-5 bg-neutral-950 text-white">
       <div className="col-span-4">
         <h1 className="text-3xl font-bold ">ManavKalyan</h1>
         <p className="mt-2 text-sm ">

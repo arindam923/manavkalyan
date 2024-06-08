@@ -1,5 +1,8 @@
 import GetUsaHand from "@/components/sections/GetUsaHand";
+import MeetOurTeam from "@/components/sections/MeetOurTeam";
 import NeedResponse from "@/components/sections/NeedResponse";
+import NewsLetterSubscription from "@/components/sections/NewsLetterSubscription";
+import OurAchievements from "@/components/sections/Ouracheivement";
 import Whatwedo from "@/components/sections/Whatwedo";
 import { IconVideo } from "@tabler/icons-react";
 import Image from "next/image";
@@ -39,6 +42,9 @@ export default function Home() {
       <Whatwedo />
       <NeedResponse />
       <GetUsaHand />
+      <OurAchievements />
+      <MeetOurTeam />
+      <NewsLetterSubscription />
     </main>
   );
 }
