@@ -6,28 +6,30 @@ export default function GetUsaHand({}: Props) {
   return (
     <section className="container flex flex-col items-center mt-10 mx-auto">
       <p className="text-sm text-primary font-semibold uppercase">
-        Get Us a hand
+        Lend a Hand
       </p>
-      <h2 className="text-4xl text-slate-900 font-semibold">
-        Explore our Programs
+      <h2 className="text-4xl text-center text-slate-900 font-semibold">
+        Explore Our Programs
       </h2>
-      <p className="my-2 text-sm lg:w-[60%] text-center text-muted-foreground ">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
-        dignissimos magni velit quos, sint quibusdam perspiciatis tempora nisi.
+      <p className="my-2 text-sm lg:w-[60%] text-center text-muted-foreground">
+        Discover the various ways you can make an impact. Our programs are
+        designed to address critical needs, promote sustainable development, and
+        foster community growth. Join us in our mission to create a brighter
+        future for all.
       </p>
 
-      <div className="flex flex-col md:flex-row justify-center mt-10 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-6">
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
           <img
             className="w-full"
-            src="https://images.unsplash.com/photo-1623122617524-18ca7a791c37?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmdvfGVufDB8fDB8fHww"
+            src="https://s6.imgcdn.dev/3aSfM.jpg"
             alt="Community Outreach"
           />
-          <div className="px-6 py-4">
+          <div className="p-4">
             <div className="font-bold text-xl mb-2">Community Outreach</div>
             <p className="text-gray-700 text-base">
-              Engage with local communities to provide support and resources for
-              those in need.
+              Engage with local communities to provide education and food for
+              less fortunate kids.
             </p>
           </div>
         </div>
@@ -35,16 +37,14 @@ export default function GetUsaHand({}: Props) {
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
           <img
             className="w-full"
-            src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmdvfGVufDB8fDB8fHww"
+            src="https://s6.imgcdn.dev/3arpd.jpg"
             alt="Environmental Conservation"
           />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">
-              Environmental Conservation
-            </div>
+          <div className="p-4">
+            <div className="font-bold text-xl mb-2">Food Stations</div>
             <p className="text-gray-700 text-base">
-              Participate in activities aimed at preserving natural habitats and
-              promoting sustainability.
+              Set up food stations to support individuals who can't afford food
+              and to combat malnourishment.
             </p>
           </div>
         </div>
@@ -52,14 +52,14 @@ export default function GetUsaHand({}: Props) {
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
           <img
             className="w-full"
-            src="https://images.unsplash.com/photo-1613399421095-41f5c68e9f8c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmdvfGVufDB8fDB8fHww"
+            src="https://s6.imgcdn.dev/3axyl.jpg"
             alt="Education Support"
           />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Education Support</div>
+          <div className="p-4">
+            <div className="font-bold text-xl mb-2">Medical Camps</div>
             <p className="text-gray-700 text-base">
-              Assist in educational programs to help children and adults achieve
-              their academic goals.
+              Organize medical camps to provide healthcare services for the poor
+              and underserved communities.
             </p>
           </div>
         </div>

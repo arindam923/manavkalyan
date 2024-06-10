@@ -9,7 +9,7 @@ export default function NewsLetterSubscription({}: Props) {
         <h2 className="text-3xl font-extrabold text-white mb-6">
           Stay Updated with Our Mission
         </h2>
-        <p className="text-white mb-8">
+        <p className="text-white text-sm mb-8">
           Subscribe to our newsletter to receive the latest news and updates
           about our work, events, and how you can get involved.
         </p>
@@ -21,7 +21,7 @@ export default function NewsLetterSubscription({}: Props) {
           />
           <button
             type="submit"
-            className="w-full sm:w-auto bg-white text-black font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300"
+            className="w-full sm:w-auto text-sm bg-white text-black font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300"
           >
             Subscribe
           </button>

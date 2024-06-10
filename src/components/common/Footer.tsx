@@ -14,7 +14,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className="w-full p-8 grid grid-cols-8 gap-5 bg-neutral-950 text-white">
+    <footer className="w-full p-8 grid grid-cols-1 lg:grid-cols-8 gap-5 bg-neutral-950 text-white">
       <div className="col-span-4">
         <h1 className="text-3xl font-bold ">ManavKalyan</h1>
         <p className="mt-2 text-sm ">
@@ -35,7 +35,7 @@ export default function Footer({}: Props) {
           compassion unite
         </p>
       </div>
-      <div className="col-span-2">
+      <div className="lg:col-span-2 hidden lg:block">
         <h3 className="font-bold text-xl">Useful Links</h3>
 
         <div className="gap-2">
@@ -50,7 +50,7 @@ export default function Footer({}: Props) {
           ))}
         </div>
       </div>
-      <div className="col-span-2">
+      <div className="lg:col-span-2 ">
         <h3 className="font-bold text-xl">Contact us</h3>
         <p className="text-xs lg:text-sm">
           Together let&apos;s nurture a world where tradition, sustainbility and

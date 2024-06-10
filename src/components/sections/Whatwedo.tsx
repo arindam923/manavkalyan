@@ -9,32 +9,38 @@ export default function Whatwedo({}: Props) {
       id: 0,
       name: "Help the community",
       image: "/care-48.png",
+      description:
+        "Engage in activities that uplift and support local communities, providing essential services and fostering a sense of togetherness.",
     },
     {
       id: 1,
       name: "Youth Empowerment",
       image: "/youth.png",
+      description:
+        "Empower the younger generation with education, skills, and opportunities to become leaders and change-makers in their communities.",
     },
     {
       id: 2,
-      name: "Care for all the member",
+      name: "Care for all the members",
       image: "/volunteer.png",
+      description:
+        "Provide comprehensive support and care for all community members, ensuring everyone has access to necessary resources and assistance.",
     },
   ];
 
   return (
     <section className="container flex flex-col items-center mt-5 mx-auto">
       <p className="text-primary uppercase font-semibold text-sm">What we do</p>
-      <h2 className="text-4xl text-slate-900 font-semibold ">
-        Change the world
+      <h2 className="text-4xl text-slate-900 font-semibold">
+        Make a Difference
       </h2>
       <p className="my-2 text-sm text-muted-foreground lg:w-[60%] text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minima ad
-        dignissimos voluptatem vitae autem, laudantium error. A, at quisquam?
-        Asperiores totam tenetur eligendi odit error esse?
+        Join us in our efforts to create positive change. Your support helps us
+        provide essential services, foster community development, and bring hope
+        to those in need. Together, we can build a better future.
       </p>
 
-      <div className="mt-4 grid grid-cols-3 gap-4">
+      <div className="mt-4 grid lg:grid-cols-3 gap-4">
         {data.map((item) => (
           <article
             key={item.id}
@@ -45,9 +51,7 @@ export default function Whatwedo({}: Props) {
               {item.name}
             </h2>
             <p className="text-sm text-muted-foreground text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium, facere sint officiis quam cum maxime at, voluptas,
-              veritatis repellat doloremque dolor eligendi magni consectetur.
+              {item.description}
             </p>
           </article>
         ))}

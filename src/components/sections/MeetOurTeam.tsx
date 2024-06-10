@@ -1,14 +1,14 @@
+import Link from "next/link";
+
 const MeetOurTeam = () => {
   return (
     <section className="container flex flex-col items-center mt-5 mx-auto">
-      <p className="text-primary uppercase text-sm font-semibold">
-        Join With us
-      </p>
+      <p className="text-primary uppercase text-sm font-semibold">Join Us</p>
       <h2 className="text-4xl font-semibold">Meet the Team</h2>
       <p className="mt-2 text-sm text-muted-foreground lg:w-[60%] text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, rerum
-        repellendus. Cumque dolorem maiores reiciendis nulla molestias, ullam
-        nisi.
+        Get to know the passionate individuals behind our mission. Our team is
+        dedicated to making a difference and bringing positive change to
+        communities in need. Together, we strive to create a better world.
       </p>
 
       <div className="bg-white max-w-3xl mt-2 p-6 rounded-lg shadow-lg">
@@ -38,9 +38,12 @@ const MeetOurTeam = () => {
         </div>
       </div>
       <div className="mt-12 text-center">
-        <button className="bg-white text-primary font-semibold py-2 px-4 rounded-full shadow-md hover:bg-gray-100 transition-colors duration-300">
+        <Link
+          href={"/join-us"}
+          className="bg-white text-primary font-semibold py-2 px-4 rounded-full shadow-md hover:bg-gray-100 transition-colors duration-300"
+        >
           Join Us in Our Mission
-        </button>
+        </Link>
       </div>
     </section>
   );

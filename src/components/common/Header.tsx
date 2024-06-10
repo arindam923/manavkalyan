@@ -1,6 +1,8 @@
-import { IconHeart } from "@tabler/icons-react";
+import { IconHeart, IconMenu } from "@tabler/icons-react";
 import Link from "next/link";
+import Image from "next/image";
 import CashfreeCheckout from "../PayoutButton";
+import MobileMenu from "./MobileMenu";
 
 export const tabs = [
   {
@@ -37,14 +39,20 @@ export const tabs = [
 
 const Header = () => {
   return (
-    <header className="flex items-center container mx-auto justify-between py-2 border-b border-slate-100">
-      <div>
-        <h2 className="text-2xl font-semibold">
-          Manav <span className="text-primary">Kalyan</span>
-        </h2>
+    <header className="flex items-center container mx-auto justify-between p-4 lg:px-4 lg:py-2 border-b border-slate-100">
+      <div className="flex items-center space-x-2">
+        <MobileMenu />
+        <Link href={"/"}>
+          <div className="flex items-center space-x-2">
+            <Image src="/logo.jpeg" width={40} height={40} alt="logo" />
+            <h2 className="text-xl lg:text-2xl font-semibold">
+              Manav <span className="text-primary">Kalyan</span>
+            </h2>
+          </div>
+        </Link>
       </div>
 
-      <nav className="flex items-center space-x-8">
+      <nav className="lg:flex hidden items-center space-x-8">
         {tabs.map((item) => (
           <Link
             href={item.href}
@@ -56,9 +64,12 @@ const Header = () => {
         ))}
       </nav>
 
-      <div className="flex items-center space-x-4 text-sm font-semibold">
-        <CashfreeCheckout />
-      </div>
+      <Link
+        className="flex items-center  rounded-md space-x-2 px-4 py-2 bg-primary text-white"
+        href="/donation"
+      >
+        Donate Now
+      </Link>
     </header>
   );
 };
