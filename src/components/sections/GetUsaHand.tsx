@@ -43,8 +43,8 @@ export default function GetUsaHand({}: Props) {
           <div className="p-4">
             <div className="font-bold text-xl mb-2">Food Stations</div>
             <p className="text-gray-700 text-base">
-              Set up food stations to support individuals who can't afford food
-              and to combat malnourishment.
+              Set up food stations to support individuals who can&apos;t afford
+              food and to combat malnourishment.
             </p>
           </div>
         </div>

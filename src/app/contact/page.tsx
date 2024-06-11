@@ -16,8 +16,8 @@ export default function page({}: Props) {
           </h3>
           <p className="mt-4 text-sm leading-5 text-gray-200">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy
+            text ever since the 1500s.
           </p>
 
           <div className="flex space-x-2  items-center mt-5">
