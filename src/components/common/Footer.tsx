@@ -52,6 +52,12 @@ export default function Footer({}: Props) {
           >
             <p>Terms & Conditions</p>
           </Link>
+          <Link
+            className="text-sm block text-zinc-100 hover:font-semibold transition-all duration-100 ease-in-out"
+            href={"/refund-policy"}
+          >
+            <p>Refund & Return Policy</p>
+          </Link>
         </div>
       </div>
       <div className="lg:col-span-2 text-xs lg:text-sm">
