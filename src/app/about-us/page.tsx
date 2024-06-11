@@ -1,3 +1,4 @@
+import Timeline from "@/components/Timeline";
 import React from "react";
 
 type Props = {};
@@ -123,6 +124,8 @@ export default function page({}: Props) {
           training in beekeeping.
         </p>
       </div>
+
+      <Timeline />
     </main>
   );
 }

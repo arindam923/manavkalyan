@@ -3,6 +3,7 @@ import {
   IconBrandInstagram,
   IconBrandLinkedin,
   IconMail,
+  IconMap,
   IconPhoneCall,
   IconPin,
 } from "@tabler/icons-react";
@@ -16,12 +17,12 @@ export default function Footer({}: Props) {
   return (
     <footer className="w-full p-8 grid grid-cols-1 lg:grid-cols-8 gap-5 bg-neutral-950 text-white">
       <div className="col-span-4">
-        <h1 className="text-3xl font-bold ">ManavKalyan</h1>
+        <h1 className="text-3xl font-bold ">
+          MANAV KALYAN VIDHYAPEETH SANSTHAN
+        </h1>
         <p className="mt-2 text-sm ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut
-          quis, doloremque accusantium facere optio! Doloremque voluptates ut
-          exercitationem assumenda, voluptatum fugit illum ullam voluptatibus
-          fugiat.
+          Emphasizing on the empowerment, it suppports female, children and
+          trans-gender from every starta of society.
         </p>
         <div className="my-4 flex items-center space-x-4">
           <h3 className="font-bold text-xl">Follow us</h3>
@@ -38,7 +39,7 @@ export default function Footer({}: Props) {
       <div className="lg:col-span-2 hidden lg:block">
         <h3 className="font-bold text-xl">Useful Links</h3>
 
-        <div className="gap-2">
+        <div className="space-y-2">
           {tabs.map((item) => (
             <Link
               className="text-sm block text-zinc-100 hover:font-semibold transition-all duration-100 ease-in-out"
@@ -50,25 +51,24 @@ export default function Footer({}: Props) {
           ))}
         </div>
       </div>
-      <div className="lg:col-span-2 ">
+      <div className="lg:col-span-2 text-xs lg:text-sm">
         <h3 className="font-bold text-xl">Contact us</h3>
         <p className="text-xs lg:text-sm">
-          Together let&apos;s nurture a world where tradition, sustainbility and
-          compassion unite
+          Our work aims to break the vicious cycle of poverty and social
+          isolation and to restore hope for a better future
         </p>
         <div className="flex items-center space-x-4 mt-2">
           <IconPhoneCall />
-          <span>+3857837435</span>
-          <span>+4589375735</span>
+          <span>+91-7062885333</span>
         </div>
         <div className="flex items-center space-x-4 mt-2">
           <IconMail />
-          <span>manavkalyan@gmail.com</span>
+          <span>helpmanavkalyan@gmail.com</span>
         </div>
 
         <div className="flex items-center space-x-4 mt-2">
-          <IconPin />
-          <span>Jaipur, Rajasthan</span>
+          <IconMap />
+          <span>Plot No. 16, Gandhi Vihar, Sanganer Jaipur - 302029</span>
         </div>
       </div>
     </footer>

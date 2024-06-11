@@ -3,93 +3,28 @@ import React from "react";
 type Props = {};
 
 export default function page({}: Props) {
+  const data = [
+    "https://s6.imgcdn.dev/3aqNL.png",
+    "https://s6.imgcdn.dev/3aegu.png",
+    "https://s6.imgcdn.dev/3aFGa.png",
+    "https://s6.imgcdn.dev/3aHew.png",
+    "https://s6.imgcdn.dev/3agMt.png",
+    "https://s6.imgcdn.dev/3aEzT.png",
+    "https://s6.imgcdn.dev/3a8tD.png",
+    "https://s6.imgcdn.dev/3aoD9.png",
+    "https://s6.imgcdn.dev/3ap5y.png",
+    "https://s6.imgcdn.dev/31DA8.png",
+    "https://s6.imgcdn.dev/31Yg2.png",
+  ];
+
   return (
     <section className="container mx-auto py-12">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg"
-            alt=""
-          />
-        </div>
+        {data.map((item, index) => (
+          <div key={index}>
+            <img className="h-auto max-w-full rounded-lg" src={item} alt="" />
+          </div>
+        ))}
       </div>
     </section>
   );

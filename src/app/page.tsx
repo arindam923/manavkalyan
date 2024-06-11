@@ -3,10 +3,10 @@ import GetUsaHand from "@/components/sections/GetUsaHand";
 import MeetOurTeam from "@/components/sections/MeetOurTeam";
 import NeedResponse from "@/components/sections/NeedResponse";
 import NewsLetterSubscription from "@/components/sections/NewsLetterSubscription";
+import Mission, { missionData } from "@/components/sections/OurMission";
 import OurAchievements from "@/components/sections/Ouracheivement";
 import Whatwedo from "@/components/sections/Whatwedo";
 
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -49,7 +49,8 @@ export default function Home() {
       <NeedResponse />
       <GetUsaHand />
       <OurAchievements />
-      <MeetOurTeam />
+      {/* <MeetOurTeam /> */}
+      <Mission title={missionData.title} sections={missionData.sections} />
       <BytheNumber />
       <NewsLetterSubscription />
     </main>
