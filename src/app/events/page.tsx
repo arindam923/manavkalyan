@@ -1,8 +1,15 @@
 import React from "react";
 import { Progress } from "@/components/ui/progress";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
+import { Metadata } from "next";
 
 type Props = {};
+
+export const metadata: Metadata = {
+  title: "MANAV KALYAN VIDHYAPEETH SANSTHAN - Fundraising Events",
+  description:
+    "Welcome to MANAV KALYAN VIDHYAPEETH SANSTHAN. Learn about our mission and how you can help.",
+};
 
 const fundraisingData = [
   {

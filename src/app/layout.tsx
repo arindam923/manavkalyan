@@ -7,8 +7,9 @@ import Header from "@/components/common/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ManavKalyan NGO",
-  description: "Manavkalyan NGO",
+  title: "MANAV KALYAN VIDHYAPEETH SANSTHAN - Home",
+  description:
+    "Welcome to MANAV KALYAN VIDHYAPEETH SANSTHAN. Learn about our mission and how you can help.",
 };
 
 export default function RootLayout({

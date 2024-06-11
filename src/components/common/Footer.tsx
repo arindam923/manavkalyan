@@ -37,18 +37,21 @@ export default function Footer({}: Props) {
         </p>
       </div>
       <div className="lg:col-span-2 hidden lg:block">
-        <h3 className="font-bold text-xl">Useful Links</h3>
+        <h3 className="font-bold text-xl">Legal Links</h3>
 
-        <div className="space-y-2">
-          {tabs.map((item) => (
-            <Link
-              className="text-sm block text-zinc-100 hover:font-semibold transition-all duration-100 ease-in-out"
-              key={item.id}
-              href={item.href}
-            >
-              <p>{item.name}</p>
-            </Link>
-          ))}
+        <div className="space-y-2 mt-4">
+          <Link
+            className="text-sm block text-zinc-100 hover:font-semibold transition-all duration-100 ease-in-out"
+            href={"/privacy-policy"}
+          >
+            <p>Privacy Policy</p>
+          </Link>
+          <Link
+            className="text-sm block text-zinc-100 hover:font-semibold transition-all duration-100 ease-in-out"
+            href={"/terms-and-condition"}
+          >
+            <p>Terms & Conditions</p>
+          </Link>
         </div>
       </div>
       <div className="lg:col-span-2 text-xs lg:text-sm">

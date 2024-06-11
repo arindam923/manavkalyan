@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import React from "react";
 
 type Props = {};
@@ -13,6 +14,12 @@ type Props = {};
 // "https://s6.imgcdn.dev/3ap5y.png",
 // "https://s6.imgcdn.dev/31DA8.png",
 // "https://s6.imgcdn.dev/31Yg2.png",
+
+export const metadata: Metadata = {
+  title: "MANAV KALYAN VIDHYAPEETH SANSTHAN - News",
+  description:
+    "Welcome to MANAV KALYAN VIDHYAPEETH SANSTHAN. Learn about our mission and how you can help.",
+};
 
 export default function page({}: Props) {
   const data = [

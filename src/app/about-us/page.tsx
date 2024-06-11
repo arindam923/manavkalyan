@@ -1,7 +1,14 @@
 import Timeline from "@/components/Timeline";
+import { Metadata } from "next";
 import React from "react";
 
 type Props = {};
+
+export const metadata: Metadata = {
+  title: "MANAV KALYAN VIDHYAPEETH SANSTHAN - About us",
+  description:
+    "Welcome to MANAV KALYAN VIDHYAPEETH SANSTHAN. Learn about our mission and how you can help.",
+};
 
 export default function page({}: Props) {
   return (
