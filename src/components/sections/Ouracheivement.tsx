@@ -62,9 +62,10 @@ export default function OurAchievements() {
 
           <div className="flex items-center justify-center">
             <img
-              src="https://s6.imgcdn.dev/3aAXV.jpg"
+              // src="https://s6.imgcdn.dev/3aAXV.jpg"
+              src="/images/ban3.jpeg"
               alt="NGO Image"
-              className="rounded-lg  shadow-lg"
+              className="rounded-lg h-[400px] object-cover shadow-lg"
             />
           </div>
         </div>

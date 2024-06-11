@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BytheNumber from "@/components/sections/BytheNumber";
 import GetUsaHand from "@/components/sections/GetUsaHand";
 import MeetOurTeam from "@/components/sections/MeetOurTeam";
@@ -6,8 +7,9 @@ import NewsLetterSubscription from "@/components/sections/NewsLetterSubscription
 import Mission, { missionData } from "@/components/sections/OurMission";
 import OurAchievements from "@/components/sections/Ouracheivement";
 import Whatwedo from "@/components/sections/Whatwedo";
-
-import Link from "next/link";
+import ApnaPatShala from "@/components/sections/ApnaPatShaha";
+import InterNationStudents from "@/components/sections/InternationStudents";
+import CoronaSection from "@/components/sections/CoronaSection";
 
 export default function Home() {
   return (
@@ -50,7 +52,10 @@ export default function Home() {
       <GetUsaHand />
       <OurAchievements />
       {/* <MeetOurTeam /> */}
-      <Mission title={missionData.title} sections={missionData.sections} />
+      <ApnaPatShala />
+      <InterNationStudents />
+      <CoronaSection />
+      {/* <Mission title={missionData.title} sections={missionData.sections} /> */}
       <BytheNumber />
       <NewsLetterSubscription />
     </main>
