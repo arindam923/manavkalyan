@@ -29,8 +29,8 @@ const ApnaPatShala = () => {
             </li>
             <li>
               <strong>Nutritious Meals:</strong> We understand the importance of
-              a balanced diet in a child's development, so we provide nutritious
-              meals to help our students stay healthy and focused.
+              a balanced diet in a child&apos;s development, so we provide
+              nutritious meals to help our students stay healthy and focused.
             </li>
             <li>
               <strong>Emotional Support:</strong> Our team includes counselors
